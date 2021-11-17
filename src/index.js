@@ -1,31 +1,31 @@
-import './styles.css'
+import './styles.css';
 
 const container = document.querySelector('.score-list');
 
 const listItems = [
   {
-    name: "Jeff",
-    score: 21
+    name: 'Jeff',
+    score: 21,
   },
   {
-    name: "Jessica",
-    score: 18
+    name: 'Jessica',
+    score: 18,
   },
   {
-    name: "Jesse",
-    score: 15
+    name: 'Jesse',
+    score: 15,
   },
   {
-    name: "Maria",
-    score: 12
+    name: 'Maria',
+    score: 12,
   },
   {
-    name: "Joel",
-    score: 9
+    name: 'Joel',
+    score: 9,
   },
   {
-    name: "Jade",
-    score: 2
+    name: 'Jade',
+    score: 2,
   }
 ];
 
