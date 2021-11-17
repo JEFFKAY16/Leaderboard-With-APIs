@@ -26,7 +26,7 @@ const listItems = [
   {
     name: 'Jade',
     score: 2,
-  }
+  },
 ];
 
 let foo = 0;
@@ -35,7 +35,7 @@ listItems.forEach((list) => {
   if (foo <= 0) {
     container.innerHTML += `<li class="items">${list.name} : ${list.score}</li>`;
     foo += 1;
-  }else {
+  } else {
     container.innerHTML += `<li class="items grey-color">${list.name} : ${list.score}</li>`;
     foo = 0;
   }
