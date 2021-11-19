@@ -1,42 +1,15 @@
 import './styles.css';
+import PlayChess from './play_chess';
 
-const container = document.querySelector('.score-list');
+const game = new PlayChess();
+game.displayScores();
+document.querySelector('#refresh').addEventListener('click', () => game.displayScores());
 
-const listItems = [
-  {
-    name: 'Jeff',
-    score: 21,
-  },
-  {
-    name: 'Jessica',
-    score: 18,
-  },
-  {
-    name: 'Jesse',
-    score: 15,
-  },
-  {
-    name: 'Maria',
-    score: 12,
-  },
-  {
-    name: 'Joel',
-    score: 9,
-  },
-  {
-    name: 'Jade',
-    score: 2,
-  },
-];
-
-let foo = 0;
-
-listItems.forEach((list) => {
-  if (foo <= 0) {
-    container.innerHTML += `<li class="items">${list.name} : ${list.score}</li>`;
-    foo += 1;
-  } else {
-    container.innerHTML += `<li class="items grey-color">${list.name} : ${list.score}</li>`;
-    foo = 0;
-  }
-});
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const user = form.elements.user.value;
+  const score = form.elements.score.value;
+  game.addScore(user, score).then((res) => console.log(res));
+  form.reset();
+})
