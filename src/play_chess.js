@@ -4,7 +4,10 @@ export default class PlayChess {
     this.baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
   }
 
-  fetchScores = async () => fetch(`${this.baseUrl}games/${this.gameKey}/scores/`).json();
+  fetchScores = async () => {
+    const response = await(await fetch(`${this.baseUrl}games/${this.gameKey}/scores/`)).json();
+    return response;
+  };
 
   displayScores() {
     const scoreList = document.querySelector('.score-list');
