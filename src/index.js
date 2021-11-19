@@ -1,5 +1,5 @@
 import './styles.css';
-import PlayChess from './play_chess';
+import PlayChess from './play_chess.js';
 
 const game = new PlayChess();
 game.displayScores();
