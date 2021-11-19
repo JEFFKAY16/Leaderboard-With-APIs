@@ -10,6 +10,6 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const user = form.elements.user.value;
   const score = form.elements.score.value;
-  game.addScore(user, score).then((res) => console.log(res));
+  game.addScore(user, score);
   form.reset();
-})
+});
