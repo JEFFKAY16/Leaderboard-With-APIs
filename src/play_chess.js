@@ -5,7 +5,7 @@ export default class PlayChess {
   }
 
   fetchScores = async () => {
-    const response = await(await fetch(`${this.baseUrl}games/${this.gameKey}/scores/`)).json();
+    const response = await (await fetch(`${this.baseUrl}games/${this.gameKey}/scores/`)).json();
     return response;
   };
 
