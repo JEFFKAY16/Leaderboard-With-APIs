@@ -16,16 +16,30 @@ ul {
 h1 {
   font-size: 50px;
   font-weight: 300;
+  background: #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: green;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.586);
 }
 
 h2 {
   font-weight: 200;
+  color: green;
 }
 
 .d-flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.recent-score,
+.add-your-score {
+  background: #ddd;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.586);
 }
 
 .recent-score-title {
@@ -41,7 +55,8 @@ h2 {
 
 .recent-score-table {
   margin: 2px;
-  border: 1px solid #000;
+  border: 2px solid green;
+  background: #fff;
 }
 
 .grey-color {
@@ -60,7 +75,7 @@ form {
 input[type="text"] {
   margin: 5px 0;
   padding: 5px;
-  border: 1px solid #000;
+  border: 2px solid green;
   background: none;
   outline: none;
 }
@@ -68,31 +83,37 @@ input[type="text"] {
 input[type="submit"] {
   margin: 5px 0;
   padding: 5px;
-  border: 1px solid #000;
+  border: 2px solid green;
   background: none;
   outline: none;
   width: 100px;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.586);
+  transition: 0.7s;
 }
 
 button {
   margin: 5px 0;
   padding: 5px;
-  border: 1px solid #000;
+  border: 2px solid green;
   background: none;
   outline: none;
   width: 100px;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.586);
+  transition: 0.7s;
 }
 
 input[type="submit"]:hover {
-  background: rgb(143, 138, 138);
+  background: green;
   color: #fff;
   font-weight: bold;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.586);
 }
 
 button:hover {
-  background: rgb(143, 138, 138);
+  background: green;
   color: #fff;
   font-weight: bold;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.586);
 }
 
 @media only screen and (min-width: 768px) {
